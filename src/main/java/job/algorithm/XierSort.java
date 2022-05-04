@@ -3,16 +3,21 @@ package job.algorithm;
 public class XierSort extends Base {
 
     public static void main(String[] args) {
-        show();
-        for (int gap = items.length / 2; gap > 0; gap /= 2) {
+        new XierSort().sort();
+    }
+
+    @Override
+    void exec() {
+        for (int gap = items.length / 2; gap >= 1; gap /= 2) {
             for (int i = gap; i < items.length; i++) {
-                for (int j = i - gap; j >= 0; j -= gap) {
-                    if (items[j + gap] < items[j]) {
-                        swap(j + gap, j);
-                    }
+                int current = items[i];
+                int j = i;
+                while (j - gap >= 0 && current < items[j - gap]) {
+                    items[j] = items[j - gap];
+                    j -= gap;
                 }
+                items[j] = current;
             }
         }
-        show();
     }
 }

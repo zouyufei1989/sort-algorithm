@@ -3,14 +3,19 @@ package job.algorithm;
 public class CharuSort extends Base {
 
     public static void main(String[] args) {
-        show();
-        for (int i = 0; i < items.length - 1; i++) {
-            for (int j = i + 1; j > 0; j--) {
-                if (items[j] < items[j - 1]) {
-                    swap(j, j - 1);
-                }
+        new CharuSort().sort();
+    }
+
+    @Override
+    void exec() {
+        for (int i = 1; i < items.length; i++) {
+            int current = items[i];
+            int j = i - 1;
+            while (j >= 0 && current < items[j]) {
+                items[j + 1] = items[j];
+                j--;
             }
-            show();
+            items[j + 1] = current;
         }
     }
 }

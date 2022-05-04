@@ -1,7 +1,5 @@
 package job.algorithm;
 
-import jdk.nashorn.internal.objects.NativeJSON;
-
 public class Test {
 
     public static void main(String[] args) {

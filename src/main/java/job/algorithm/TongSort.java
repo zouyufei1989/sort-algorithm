@@ -47,4 +47,9 @@ public class TongSort extends Base {
 
 
     }
+
+    @Override
+    void exec() {
+
+    }
 }

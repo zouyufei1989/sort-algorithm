@@ -43,4 +43,8 @@ public class KuaisuSort extends Base {
         return left;
     }
 
+    @Override
+    void exec() {
+
+    }
 }

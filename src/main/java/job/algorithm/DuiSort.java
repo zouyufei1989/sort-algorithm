@@ -40,4 +40,8 @@ public class DuiSort extends Base {
     }
 
 
+    @Override
+    void exec() {
+
+    }
 }

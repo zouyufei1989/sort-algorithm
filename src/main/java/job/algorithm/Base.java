@@ -2,10 +2,11 @@ package job.algorithm;
 
 /**
  * Hello world!
+ * https://blog.csdn.net/qq_41999592/article/details/119771677
  */
-public class Base {
+public abstract class Base {
 
-    protected static int[] items = new int[]{154, 221,123, 98, 87, 65, 143, 54, 92, 222, 123, 143, 67, 99};
+    protected static int[] items = new int[]{154, 221, 123, 98, 87, 65, 143, 54, 92, 222, 123, 143, 67, 99};
 
     protected static void swap(int i, int j) {
         int tmp = items[i];
@@ -19,4 +20,12 @@ public class Base {
         }
         System.out.println();
     }
+
+    void sort() {
+        show();
+        exec();
+        show();
+    }
+
+    abstract void exec();
 }

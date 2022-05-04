@@ -27,4 +27,9 @@ public class JishuSort extends Base {
         }
 
     }
+
+    @Override
+    void exec() {
+
+    }
 }
