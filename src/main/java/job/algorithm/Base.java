@@ -3,6 +3,8 @@ package job.algorithm;
 /**
  * Hello world!
  * https://blog.csdn.net/qq_41999592/article/details/119771677
+ * https://visualgo.net/zh/sorting?slide=1
+ * https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/visualize/
  */
 public abstract class Base {
 
